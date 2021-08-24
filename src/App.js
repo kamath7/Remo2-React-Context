@@ -1,9 +1,14 @@
-
+import React  from "react";
+import FunctionalComp from "./FunctionalComp";
+import { ThemeProvider } from "./ThemeContext";
 function App() {
-  return (
-    <div className="App">
 
-    </div>
+  return (
+    <>
+      <ThemeProvider >
+        <FunctionalComp />
+      </ThemeProvider>
+    </>
   );
 }
 
